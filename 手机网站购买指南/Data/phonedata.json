@@ -1,0 +1,952 @@
+[
+  {
+    "id": "hw_pura70_ultra",
+    "brand": "Huawei",
+    "model": "HUAWEI Pura 70 Ultra",
+    "price": 9999,
+    "score": 98,
+    "image": "assets/phones/pura70_ultra.jpg",
+    "specs": {
+      "cpu": "Kirin 9010",
+      "ram": "16GB",
+      "storage": "512GB/1TB",
+      "screen": "6.8\" OLED (2844x1260) 120Hz LTPO",
+      "camera_main": "50MP 1-inch Pop-out Lens",
+      "camera_feature": "伸缩镜头, 卫星通话",
+      "battery": "5200mAh",
+      "charging": "100W Wired / 80W Wireless"
+    },
+    "tags": ["摄影旗舰", "鸿蒙系统", "卫星通信"]
+  },
+  {
+    "id": "hw_mate60_pro_plus",
+    "brand": "Huawei",
+    "model": "HUAWEI Mate 60 Pro+",
+    "price": 8999,
+    "score": 96,
+    "image": "assets/phones/mate60_pro_plus.jpg",
+    "specs": {
+      "cpu": "Kirin 9000S",
+      "ram": "16GB",
+      "storage": "512GB/1TB",
+      "screen": "6.82\" OLED (2720x1260) 120Hz",
+      "camera_main": "48MP Ultra Aperture",
+      "camera_feature": "玄武架构, 卫星通话",
+      "battery": "5000mAh",
+      "charging": "88W Wired / 50W Wireless"
+    },
+    "tags": ["商务旗舰", "坚固耐用"]
+  },
+  {
+    "id": "hw_mate60_pro",
+    "brand": "Huawei",
+    "model": "HUAWEI Mate 60 Pro",
+    "price": 6499,
+    "score": 94,
+    "image": "assets/phones/mate60_pro.jpg",
+    "specs": {
+      "cpu": "Kirin 9000S",
+      "ram": "12GB",
+      "storage": "512GB",
+      "screen": "6.82\" OLED 120Hz",
+      "camera_main": "50MP",
+      "camera_feature": "可变光圈",
+      "battery": "5000mAh",
+      "charging": "88W"
+    },
+    "tags": ["5G回归", "热销"]
+  },
+  {
+    "id": "hw_nova12_ultra",
+    "brand": "Huawei",
+    "model": "HUAWEI Nova 12 Ultra",
+    "price": 4699,
+    "score": 85,
+    "image": "assets/phones/nova12_ultra.jpg",
+    "specs": {
+      "cpu": "Kirin 9000SL",
+      "ram": "12GB",
+      "storage": "512GB",
+      "screen": "6.76\" OLED 120Hz",
+      "camera_main": "50MP Variable Aperture",
+      "camera_feature": "双向北斗卫星消息",
+      "battery": "4600mAh",
+      "charging": "100W"
+    },
+    "tags": ["时尚", "自拍"]
+  },
+  {
+    "id": "hw_pocket2",
+    "brand": "Huawei",
+    "model": "HUAWEI Pocket 2",
+    "price": 7499,
+    "score": 90,
+    "image": "assets/phones/pocket2.jpg",
+    "specs": {
+      "cpu": "Kirin 9000S",
+      "ram": "12GB",
+      "storage": "256GB/512GB",
+      "screen": "6.94\" Foldable OLED",
+      "camera_main": "50MP Hyperspectral",
+      "camera_feature": "紫外防晒检测",
+      "battery": "4520mAh",
+      "charging": "66W"
+    },
+    "tags": ["折叠屏", "女性首选"]
+  },
+  {
+    "id": "xm_14_ultra",
+    "brand": "Xiaomi",
+    "model": "Xiaomi 14 Ultra",
+    "price": 6499,
+    "score": 97,
+    "image": "assets/phones/xm14_ultra.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "16GB",
+      "storage": "512GB/1TB",
+      "screen": "6.73\" 2K AMOLED 120Hz",
+      "camera_main": "50MP LYT-900 (1 inch)",
+      "camera_feature": "Leica Summilux, 卫星通话",
+      "battery": "5300mAh",
+      "charging": "90W Wired / 80W Wireless"
+    },
+    "tags": ["影像机皇", "徕卡"]
+  },
+  {
+    "id": "xm_14_pro",
+    "brand": "Xiaomi",
+    "model": "Xiaomi 14 Pro",
+    "price": 4999,
+    "score": 93,
+    "image": "assets/phones/xm14_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.73\" 2K AMOLED",
+      "camera_main": "50MP Hunter 900",
+      "camera_feature": "1024级可变光圈",
+      "battery": "4880mAh",
+      "charging": "120W"
+    },
+    "tags": ["全能旗舰", "龙晶玻璃"]
+  },
+  {
+    "id": "xm_14",
+    "brand": "Xiaomi",
+    "model": "Xiaomi 14",
+    "price": 3999,
+    "score": 91,
+    "image": "assets/phones/xm14.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "8GB/12GB/16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.36\" 1.5K OLED",
+      "camera_main": "50MP",
+      "camera_feature": "75mm浮动长焦",
+      "battery": "4610mAh",
+      "charging": "90W"
+    },
+    "tags": ["小屏旗舰", "手感"]
+  },
+  {
+    "id": "xm_mix_fold3",
+    "brand": "Xiaomi",
+    "model": "Xiaomi MIX Fold 3",
+    "price": 8999,
+    "score": 94,
+    "image": "assets/phones/mix_fold3.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 2",
+      "ram": "12GB/16GB",
+      "storage": "512GB/1TB",
+      "screen": "8.03\" Foldable OLED",
+      "camera_main": "50MP Periscope",
+      "camera_feature": "徕卡全焦段四摄",
+      "battery": "4800mAh",
+      "charging": "67W"
+    },
+    "tags": ["轻薄折叠", "商务"]
+  },
+  {
+    "id": "xm_civi_4_pro",
+    "brand": "Xiaomi",
+    "model": "Xiaomi Civi 4 Pro",
+    "price": 2999,
+    "score": 86,
+    "image": "assets/phones/civi4_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8s Gen 3",
+      "ram": "12GB",
+      "storage": "256GB/512GB",
+      "screen": "6.55\" AMOLED",
+      "camera_main": "50MP Leica",
+      "camera_feature": "仿生双摄自拍",
+      "battery": "4700mAh",
+      "charging": "67W"
+    },
+    "tags": ["轻薄", "人像"]
+  },
+  {
+    "id": "rm_k70_pro",
+    "brand": "Redmi",
+    "model": "Redmi K70 Pro",
+    "price": 3299,
+    "score": 89,
+    "image": "assets/phones/k70_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB/16GB/24GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.67\" 2K OLED 120Hz",
+      "camera_main": "50MP Light Hunter 800",
+      "camera_feature": "2X人像镜头",
+      "battery": "5000mAh",
+      "charging": "120W"
+    },
+    "tags": ["性价比", "2K直屏"]
+  },
+  {
+    "id": "rm_k70",
+    "brand": "Redmi",
+    "model": "Redmi K70",
+    "price": 2499,
+    "score": 87,
+    "image": "assets/phones/k70.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 2",
+      "ram": "12GB/16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.67\" 2K OLED",
+      "camera_main": "50MP OIS",
+      "camera_feature": "AI影像",
+      "battery": "5000mAh",
+      "charging": "120W"
+    },
+    "tags": ["销量王", "性价比"]
+  },
+  {
+    "id": "rm_turbo_3",
+    "brand": "Redmi",
+    "model": "Redmi Turbo 3",
+    "price": 1999,
+    "score": 84,
+    "image": "assets/phones/turbo3.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8s Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.67\" 1.5K OLED",
+      "camera_main": "50MP Sony LYT-600",
+      "camera_feature": "AI消除",
+      "battery": "5000mAh",
+      "charging": "90W"
+    },
+    "tags": ["性能小旋风", "哈利波特联名"]
+  },
+  {
+    "id": "rm_note13_pro_plus",
+    "brand": "Redmi",
+    "model": "Redmi Note 13 Pro+",
+    "price": 1899,
+    "score": 82,
+    "image": "assets/phones/note13_pro_plus.jpg",
+    "specs": {
+      "cpu": "Dimensity 7200-Ultra",
+      "ram": "12GB/16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.67\" 1.5K Curved OLED",
+      "camera_main": "200MP Samsung HP3",
+      "camera_feature": "IP68防水",
+      "battery": "5000mAh",
+      "charging": "120W"
+    },
+    "tags": ["IP68", "两亿像素"]
+  },
+  {
+    "id": "vv_x100_ultra",
+    "brand": "Vivo",
+    "model": "vivo X100 Ultra",
+    "price": 6499,
+    "score": 98,
+    "image": "assets/phones/x100_ultra.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.78\" 2K E7 AMOLED",
+      "camera_main": "50MP LYT-900",
+      "camera_feature": "2亿像素蔡司APO潜望长焦",
+      "battery": "5500mAh",
+      "charging": "80W Wired / 30W Wireless"
+    },
+    "tags": ["演唱会神器", "长焦之王"]
+  },
+  {
+    "id": "vv_x100_pro",
+    "brand": "Vivo",
+    "model": "vivo X100 Pro",
+    "price": 4999,
+    "score": 95,
+    "image": "assets/phones/x100_pro.jpg",
+    "specs": {
+      "cpu": "Dimensity 9300",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.78\" 1.5K OLED",
+      "camera_main": "50MP 1-inch IMX989",
+      "camera_feature": "蔡司APO长焦",
+      "battery": "5400mAh",
+      "charging": "100W"
+    },
+    "tags": ["影像", "天玑调校"]
+  },
+  {
+    "id": "vv_x100s",
+    "brand": "Vivo",
+    "model": "vivo X100s",
+    "price": 3999,
+    "score": 92,
+    "image": "assets/phones/x100s.jpg",
+    "specs": {
+      "cpu": "Dimensity 9300+",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.78\" 1.5K Flat OLED",
+      "camera_main": "50MP VCS",
+      "camera_feature": "四季人像",
+      "battery": "5100mAh",
+      "charging": "100W"
+    },
+    "tags": ["直屏旗舰", "AI影像"]
+  },
+  {
+    "id": "vv_x_fold3",
+    "brand": "Vivo",
+    "model": "vivo X Fold3",
+    "price": 6999,
+    "score": 93,
+    "image": "assets/phones/x_fold3.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 2",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "8.03\" Foldable OLED",
+      "camera_main": "50MP VCS",
+      "camera_feature": "超轻薄机身(219g)",
+      "battery": "5500mAh",
+      "charging": "80W"
+    },
+    "tags": ["最轻大折叠", "续航"]
+  },
+  {
+    "id": "iqoo_12_pro",
+    "brand": "iQOO",
+    "model": "iQOO 12 Pro",
+    "price": 4999,
+    "score": 92,
+    "image": "assets/phones/iqoo12_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.78\" 2K E7 144Hz",
+      "camera_main": "50MP VCS OV50H",
+      "camera_feature": "64MP潜望长焦",
+      "battery": "5100mAh",
+      "charging": "120W"
+    },
+    "tags": ["电竞", "BMW设计"]
+  },
+  {
+    "id": "iqoo_neo9s_pro",
+    "brand": "iQOO",
+    "model": "iQOO Neo9S Pro",
+    "price": 2999,
+    "score": 88,
+    "image": "assets/phones/neo9s_pro.jpg",
+    "specs": {
+      "cpu": "Dimensity 9300+",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.78\" 1.5K 144Hz",
+      "camera_main": "50MP IMX920",
+      "camera_feature": "电竞芯片Q1",
+      "battery": "5160mAh",
+      "charging": "120W"
+    },
+    "tags": ["游戏神机", "性价比"]
+  },
+  {
+    "id": "oppo_find_x7_ultra",
+    "brand": "OPPO",
+    "model": "OPPO Find X7 Ultra",
+    "price": 5999,
+    "score": 96,
+    "image": "assets/phones/find_x7_ultra.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.82\" 2K AMOLED 120Hz",
+      "camera_main": "50MP LYT-900",
+      "camera_feature": "双潜望长焦, 哈苏",
+      "battery": "5000mAh",
+      "charging": "100W"
+    },
+    "tags": ["双潜望", "哈苏人像"]
+  },
+  {
+    "id": "oppo_find_x7",
+    "brand": "OPPO",
+    "model": "OPPO Find X7",
+    "price": 3999,
+    "score": 90,
+    "image": "assets/phones/find_x7.jpg",
+    "specs": {
+      "cpu": "Dimensity 9300",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.78\" 1.5K AMOLED",
+      "camera_main": "50MP",
+      "camera_feature": "超光影三主摄",
+      "battery": "5000mAh",
+      "charging": "100W"
+    },
+    "tags": ["标准版天花板", "潮汐架构"]
+  },
+  {
+    "id": "oppo_find_n3",
+    "brand": "OPPO",
+    "model": "OPPO Find N3",
+    "price": 9999,
+    "score": 95,
+    "image": "assets/phones/find_n3.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 2",
+      "ram": "12GB/16GB",
+      "storage": "512GB/1TB",
+      "screen": "7.8\" Foldable OLED",
+      "camera_main": "48MP Stacked Pixel",
+      "camera_feature": "折叠像素, 国密认证",
+      "battery": "4805mAh",
+      "charging": "67W"
+    },
+    "tags": ["商务折叠", "安全"]
+  },
+  {
+    "id": "oppo_reno12_pro",
+    "brand": "OPPO",
+    "model": "OPPO Reno12 Pro",
+    "price": 3399,
+    "score": 85,
+    "image": "assets/phones/reno12_pro.jpg",
+    "specs": {
+      "cpu": "Dimensity 9200+ Star Speed",
+      "ram": "12GB/16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.7\" 120Hz OLED",
+      "camera_main": "50MP Sony IMX890",
+      "camera_feature": "实况照片, AI闭眼修复",
+      "battery": "5000mAh",
+      "charging": "80W"
+    },
+    "tags": ["轻薄人像", "实况照片"]
+  },
+  {
+    "id": "oneplus_12",
+    "brand": "OnePlus",
+    "model": "OnePlus 12",
+    "price": 4299,
+    "score": 94,
+    "image": "assets/phones/oneplus_12.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB - 24GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.82\" 2K Oriental Screen",
+      "camera_main": "50MP LYT-808",
+      "camera_feature": "哈苏影像, 潜望长焦",
+      "battery": "5400mAh",
+      "charging": "100W Wired / 50W Wireless"
+    },
+    "tags": ["全能", "质感"]
+  },
+  {
+    "id": "oneplus_ace_3_pro",
+    "brand": "OnePlus",
+    "model": "OnePlus Ace 3 Pro",
+    "price": 3199,
+    "score": 90,
+    "image": "assets/phones/ace3_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB - 24GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.78\" 1.5K 8T OLED",
+      "camera_main": "50MP IMX890",
+      "camera_feature": "Live Photo",
+      "battery": "6100mAh",
+      "charging": "100W"
+    },
+    "tags": ["续航怪兽", "冰川电池"]
+  },
+  {
+    "id": "oneplus_ace_3v",
+    "brand": "OnePlus",
+    "model": "OnePlus Ace 3V",
+    "price": 1999,
+    "score": 83,
+    "image": "assets/phones/ace3v.jpg",
+    "specs": {
+      "cpu": "Snapdragon 7+ Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.74\" 1.5K OLED",
+      "camera_main": "50MP OIS",
+      "camera_feature": "AI消除",
+      "battery": "5500mAh",
+      "charging": "100W"
+    },
+    "tags": ["AI普及", "长续航"]
+  },
+  {
+    "id": "honor_magic6_pro",
+    "brand": "Honor",
+    "model": "Honor Magic6 Pro",
+    "price": 5699,
+    "score": 96,
+    "image": "assets/phones/magic6_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.8\" OLED LTPO",
+      "camera_main": "50MP H9000",
+      "camera_feature": "1.8亿像素潜望, 鹰眼抓拍",
+      "battery": "5600mAh",
+      "charging": "80W Wired / 66W Wireless"
+    },
+    "tags": ["青海湖电池", "卫星通信"]
+  },
+  {
+    "id": "honor_magic6_rs",
+    "brand": "Honor",
+    "model": "Honor Magic6 RSR Porsche Design",
+    "price": 9999,
+    "score": 97,
+    "image": "assets/phones/magic6_rsr.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "24GB",
+      "storage": "1TB",
+      "screen": "6.8\" OLED Dual-Layer",
+      "camera_main": "50MP H9800",
+      "camera_feature": "LOFIC技术, 激光雷达对焦",
+      "battery": "5600mAh",
+      "charging": "80W"
+    },
+    "tags": ["保时捷设计", "顶配"]
+  },
+  {
+    "id": "honor_200_pro",
+    "brand": "Honor",
+    "model": "Honor 200 Pro",
+    "price": 3499,
+    "score": 88,
+    "image": "assets/phones/honor200_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8s Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.78\" OLED",
+      "camera_main": "50MP H9000",
+      "camera_feature": "雅顾光影人像",
+      "battery": "5200mAh",
+      "charging": "100W"
+    },
+    "tags": ["人像摄影", "护眼屏"]
+  },
+  {
+    "id": "honor_100_pro",
+    "brand": "Honor",
+    "model": "Honor 100 Pro",
+    "price": 2899,
+    "score": 85,
+    "image": "assets/phones/honor100_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 2",
+      "ram": "12GB/16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.78\" OLED",
+      "camera_main": "50MP IMX906",
+      "camera_feature": "单反级写真",
+      "battery": "5000mAh",
+      "charging": "100W"
+    },
+    "tags": ["护眼", "性价比"]
+  },
+  {
+    "id": "realme_gt5_pro",
+    "brand": "Realme",
+    "model": "Realme GT5 Pro",
+    "price": 3399,
+    "score": 91,
+    "image": "assets/phones/gt5_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.78\" 1.5K 144Hz",
+      "camera_main": "50MP LYT-808",
+      "camera_feature": "IMX890潜望长焦, 掌纹解锁",
+      "battery": "5400mAh",
+      "charging": "100W Wired / 50W Wireless"
+    },
+    "tags": ["性价比神机", "潜望下放"]
+  },
+  {
+    "id": "realme_gt_neo6",
+    "brand": "Realme",
+    "model": "Realme GT Neo6",
+    "price": 2099,
+    "score": 84,
+    "image": "assets/phones/gt_neo6.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8s Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.78\" 6000nit OLED",
+      "camera_main": "50MP OIS",
+      "camera_feature": "无双屏",
+      "battery": "5500mAh",
+      "charging": "120W"
+    },
+    "tags": ["屏幕亮度", "续航"]
+  },
+  {
+    "id": "realme_gt_neo6_se",
+    "brand": "Realme",
+    "model": "Realme GT Neo6 SE",
+    "price": 1699,
+    "score": 80,
+    "image": "assets/phones/gt_neo6_se.jpg",
+    "specs": {
+      "cpu": "Snapdragon 7+ Gen 3",
+      "ram": "8GB - 16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.78\" 6000nit LTPO",
+      "camera_main": "50MP",
+      "camera_feature": "AI游戏辅助",
+      "battery": "5500mAh",
+      "charging": "100W"
+    },
+    "tags": ["百瓦快充", "入门电竞"]
+  },
+  {
+    "id": "apple_iphone_15_pro_max",
+    "brand": "Apple",
+    "model": "iPhone 15 Pro Max",
+    "price": 9999,
+    "score": 97,
+    "image": "assets/phones/ip15_promax.jpg",
+    "specs": {
+      "cpu": "A17 Pro",
+      "ram": "8GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.7\" Super Retina XDR",
+      "camera_main": "48MP",
+      "camera_feature": "5x Tetraprior Zoom, ProRes",
+      "battery": "4422mAh",
+      "charging": "20W (Official)"
+    },
+    "tags": ["iOS", "钛金属", "视频录制"]
+  },
+  {
+    "id": "apple_iphone_15_pro",
+    "brand": "Apple",
+    "model": "iPhone 15 Pro",
+    "price": 7999,
+    "score": 94,
+    "image": "assets/phones/ip15_pro.jpg",
+    "specs": {
+      "cpu": "A17 Pro",
+      "ram": "8GB",
+      "storage": "128GB - 1TB",
+      "screen": "6.1\" Super Retina XDR",
+      "camera_main": "48MP",
+      "camera_feature": "3x Zoom, Spatial Video",
+      "battery": "3274mAh",
+      "charging": "20W"
+    },
+    "tags": ["小屏强机", "iOS"]
+  },
+  {
+    "id": "apple_iphone_15",
+    "brand": "Apple",
+    "model": "iPhone 15",
+    "price": 5999,
+    "score": 88,
+    "image": "assets/phones/ip15.jpg",
+    "specs": {
+      "cpu": "A16 Bionic",
+      "ram": "6GB",
+      "storage": "128GB - 512GB",
+      "screen": "6.1\" 60Hz OLED",
+      "camera_main": "48MP",
+      "camera_feature": "2x Crop Zoom",
+      "battery": "3349mAh",
+      "charging": "20W"
+    },
+    "tags": ["灵动岛", "Type-C"]
+  },
+  {
+    "id": "apple_iphone_13",
+    "brand": "Apple",
+    "model": "iPhone 13",
+    "price": 3999,
+    "score": 75,
+    "image": "assets/phones/ip13.jpg",
+    "specs": {
+      "cpu": "A15 Bionic",
+      "ram": "4GB",
+      "storage": "128GB - 512GB",
+      "screen": "6.1\" 60Hz OLED",
+      "camera_main": "12MP",
+      "camera_feature": "Cinematic Mode",
+      "battery": "3240mAh",
+      "charging": "20W"
+    },
+    "tags": ["入门苹果", "性价比"]
+  },
+  {
+    "id": "samsung_s24_ultra",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy S24 Ultra",
+    "price": 9699,
+    "score": 97,
+    "image": "assets/phones/s24_ultra.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3 for Galaxy",
+      "ram": "12GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.8\" QHD+ Dynamic AMOLED 2X",
+      "camera_main": "200MP",
+      "camera_feature": "Galaxy AI, 100x Zoom, S-Pen",
+      "battery": "5000mAh",
+      "charging": "45W"
+    },
+    "tags": ["安卓机皇", "AI手机", "手写笔"]
+  },
+  {
+    "id": "samsung_s24_plus",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy S24+",
+    "price": 6999,
+    "score": 92,
+    "image": "assets/phones/s24_plus.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3 for Galaxy",
+      "ram": "12GB",
+      "storage": "256GB/512GB",
+      "screen": "6.7\" QHD+ Dynamic AMOLED 2X",
+      "camera_main": "50MP",
+      "camera_feature": "Galaxy AI",
+      "battery": "4900mAh",
+      "charging": "45W"
+    },
+    "tags": ["均衡旗舰", "AI"]
+  },
+  {
+    "id": "samsung_z_fold5",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy Z Fold5",
+    "price": 10999,
+    "score": 93,
+    "image": "assets/phones/z_fold5.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 2 for Galaxy",
+      "ram": "12GB",
+      "storage": "256GB - 1TB",
+      "screen": "7.6\" Foldable AMOLED",
+      "camera_main": "50MP",
+      "camera_feature": "多任务处理",
+      "battery": "4400mAh",
+      "charging": "25W"
+    },
+    "tags": ["折叠屏老将", "生产力"]
+  },
+  {
+    "id": "samsung_z_flip5",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy Z Flip5",
+    "price": 5999,
+    "score": 88,
+    "image": "assets/phones/z_flip5.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 2",
+      "ram": "8GB",
+      "storage": "256GB/512GB",
+      "screen": "6.7\" Foldable + 3.4\" Cover",
+      "camera_main": "12MP Dual",
+      "camera_feature": "外屏自拍",
+      "battery": "3700mAh",
+      "charging": "25W"
+    },
+    "tags": ["时尚小折叠", "外屏"]
+  },
+  {
+    "id": "meizu_21_pro",
+    "brand": "Meizu",
+    "model": "Meizu 21 Pro",
+    "price": 4999,
+    "score": 89,
+    "image": "assets/phones/meizu21_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.79\" 21:9 2K OLED",
+      "camera_main": "50MP",
+      "camera_feature": "AI辅助, mTouch Max广域指纹",
+      "battery": "5050mAh",
+      "charging": "80W Wired / 50W Wireless"
+    },
+    "tags": ["单手旗舰", "最美直屏"]
+  },
+  {
+    "id": "meizu_21",
+    "brand": "Meizu",
+    "model": "Meizu 21",
+    "price": 3199,
+    "score": 86,
+    "image": "assets/phones/meizu21.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "8GB/12GB",
+      "storage": "256GB/512GB",
+      "screen": "6.55\" OLED 1.74mm Bezel",
+      "camera_main": "200MP",
+      "camera_feature": "Aicy灵动环",
+      "battery": "4800mAh",
+      "charging": "80W"
+    },
+    "tags": ["极窄边框", "白色面板"]
+  },
+  {
+    "id": "nubia_z60_ultra",
+    "brand": "Nubia",
+    "model": "Nubia Z60 Ultra",
+    "price": 3999,
+    "score": 90,
+    "image": "assets/phones/z60_ultra.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB - 24GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.8\" Full Screen (Under Display Camera)",
+      "camera_main": "50MP 35mm Optics",
+      "camera_feature": "高定光学三主摄, 屏下摄像",
+      "battery": "6000mAh",
+      "charging": "80W"
+    },
+    "tags": ["真全面屏", "独特焦段"]
+  },
+  {
+    "id": "moto_x50_ultra",
+    "brand": "Motorola",
+    "model": "Moto X50 Ultra",
+    "price": 3999,
+    "score": 87,
+    "image": "assets/phones/moto_x50.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8s Gen 3",
+      "ram": "12GB/16GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.7\" 144Hz OLED",
+      "camera_main": "50MP",
+      "camera_feature": "AI影像, 实木机身",
+      "battery": "4500mAh",
+      "charging": "125W"
+    },
+    "tags": ["AI手机", "高刷"]
+  },
+  {
+    "id": "red_magic_9_pro",
+    "brand": "RedMagic",
+    "model": "RedMagic 9 Pro",
+    "price": 4399,
+    "score": 91,
+    "image": "assets/phones/redmagic9_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12GB - 24GB",
+      "storage": "256GB - 1TB",
+      "screen": "6.8\" No-Notch OLED",
+      "camera_main": "50MP Flat Back",
+      "camera_feature": "背部纯平不凸起",
+      "battery": "6500mAh",
+      "charging": "80W"
+    },
+    "tags": ["纯平背板", "主动风扇"]
+  },
+  {
+    "id": "rog_phone_8_pro",
+    "brand": "ROG",
+    "model": "ROG Phone 8 Pro",
+    "price": 5999,
+    "score": 92,
+    "image": "assets/phones/rog8_pro.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "16GB/24GB",
+      "storage": "512GB/1TB",
+      "screen": "6.78\" 165Hz LTPO",
+      "camera_main": "50MP Gimbal OIS",
+      "camera_feature": "AniMe Vision光显矩阵",
+      "battery": "5500mAh",
+      "charging": "65W"
+    },
+    "tags": ["败家之眼", "信仰"]
+  },
+  {
+    "id": "honor_magic_v2",
+    "brand": "Honor",
+    "model": "Honor Magic V2",
+    "price": 8999,
+    "score": 94,
+    "image": "assets/phones/magic_v2.jpg",
+    "specs": {
+      "cpu": "Snapdragon 8 Gen 2 Leading Version",
+      "ram": "16GB",
+      "storage": "256GB - 1TB",
+      "screen": "7.92\" Foldable OLED",
+      "camera_main": "50MP",
+      "camera_feature": "鹰眼相机",
+      "battery": "5000mAh",
+      "charging": "66W"
+    },
+    "tags": ["9.9mm超薄", "折叠标杆"]
+  },
+  {
+    "id": "vivo_s19_pro",
+    "brand": "Vivo",
+    "model": "vivo S19 Pro",
+    "price": 3299,
+    "score": 83,
+    "image": "assets/phones/s19_pro.jpg",
+    "specs": {
+      "cpu": "Dimensity 9200+",
+      "ram": "12GB/16GB",
+      "storage": "256GB/512GB",
+      "screen": "6.78\" OLED",
+      "camera_main": "50MP Sony IMX921",
+      "camera_feature": "影棚级柔光环, 50MP长焦",
+      "battery": "5500mAh",
+      "charging": "80W"
+    },
+    "tags": ["人像神器", "轻薄续航"]
+  }
+]
