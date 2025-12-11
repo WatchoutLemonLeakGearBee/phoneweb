@@ -1,4 +1,5 @@
-[
+// 手机数据
+let phoneData = [
   {
     "id": "hw_pura70_ultra",
     "brand": "Huawei",
@@ -2274,4 +2275,321 @@
       "camera": 3
     }
   }
-]
+];
+
+// 全局变量
+let userPreferences = {
+    minPrice: 1000,
+    maxPrice: 5000,
+    appearance: 3,
+    battery: 3,
+    performance: 3,
+    camera: 3,
+    systemFilterEnabled: true,
+    selectedSystems: ['ios', 'android', 'harmony', 'other']
+};
+
+// DOM元素
+const priceSlider = document.getElementById('priceSlider');
+const minPriceDisplay = document.getElementById('minPrice');
+const maxPriceDisplay = document.getElementById('maxPrice');
+const ratingOptions = document.querySelectorAll('.rating-option');
+const systemToggle = document.getElementById('systemToggle');
+const systemOptions = document.querySelectorAll('.system-option');
+const recommendButton = document.getElementById('recommendButton');
+const phoneResults = document.getElementById('phoneResults');
+const resultCount = document.getElementById('resultCount');
+
+// 初始化
+document.addEventListener('DOMContentLoaded', () => {
+    // 绑定价格滑块事件
+    priceSlider.addEventListener('input', handlePriceChange);
+    
+    // 绑定评分选项事件
+    ratingOptions.forEach(option => {
+        option.addEventListener('click', handleRatingClick);
+    });
+    
+    // 绑定系统筛选事件
+    systemToggle.addEventListener('change', handleSystemToggle);
+    systemOptions.forEach(option => {
+        option.addEventListener('click', handleSystemClick);
+    });
+    
+    // 绑定推荐按钮事件
+    recommendButton.addEventListener('click', getRecommendations);
+    
+    // 初始化系统选项（默认全选）
+    systemOptions.forEach(option => {
+        option.classList.add('selected');
+    });
+});
+
+// 处理价格变化
+function handlePriceChange() {
+    const value = parseInt(priceSlider.value);
+    userPreferences.maxPrice = value;
+    maxPriceDisplay.textContent = value.toLocaleString();
+}
+
+// 处理评分点击
+function handleRatingClick(event) {
+    const option = event.target;
+    const type = option.parentElement.dataset.type;
+    const value = parseInt(option.dataset.value);
+    
+    // 移除同类型其他选项的选中状态
+    const siblings = option.parentElement.querySelectorAll('.rating-option');
+    siblings.forEach(sibling => sibling.classList.remove('selected'));
+    
+    // 添加当前选项的选中状态
+    option.classList.add('selected');
+    
+    // 更新用户偏好
+    userPreferences[type] = value;
+    
+    // 更新显示文本
+    const ratingTexts = ['低', '比较低', '无所谓', '比较高', '高'];
+    const currentRating = document.querySelector(`.current-rating[data-type="${type}"]`);
+    currentRating.textContent = ratingTexts[value - 1];
+}
+
+// 处理系统筛选开关
+function handleSystemToggle() {
+    userPreferences.systemFilterEnabled = systemToggle.checked;
+    const systemOptionsContainer = document.getElementById('systemOptions');
+    systemOptionsContainer.style.display = systemToggle.checked ? 'grid' : 'none';
+}
+
+// 处理系统选项点击
+function handleSystemClick(event) {
+    const option = event.target;
+    const system = option.dataset.system;
+    
+    option.classList.toggle('selected');
+    
+    if (option.classList.contains('selected')) {
+        if (!userPreferences.selectedSystems.includes(system)) {
+            userPreferences.selectedSystems.push(system);
+        }
+    } else {
+        userPreferences.selectedSystems = userPreferences.selectedSystems.filter(s => s !== system);
+    }
+}
+
+// 获取手机系统类型
+function getPhoneSystem(phone) {
+    const iosBrands = ['Apple'];
+    const harmonyBrands = ['Huawei', 'Honor'];
+    const androidBrands = ['Xiaomi', 'Redmi', 'Vivo', 'iQOO', 'OPPO', 'OnePlus', 'Realme', 'Samsung', 'Meizu', 'Nubia', 'Motorola', 'RedMagic', 'ROG', 'Asus', 'Google', 'Nothing', 'Sony'];
+    
+    if (iosBrands.includes(phone.brand)) {
+        return 'ios';
+    } else if (harmonyBrands.includes(phone.brand)) {
+        return 'harmony';
+    } else if (androidBrands.includes(phone.brand)) {
+        return 'android';
+    } else {
+        return 'other';
+    }
+}
+
+// 计算推荐分数
+function calculateRecommendationScore(phone) {
+    const weights = phone.weights;
+    const userPrefs = userPreferences;
+    
+    // 计算各维度的匹配度（1-5分）
+    const appearanceMatch = Math.abs(weights.appearance - userPrefs.appearance);
+    const batteryMatch = Math.abs(weights.battery - userPrefs.battery);
+    const performanceMatch = Math.abs(weights.performance - userPrefs.performance);
+    const cameraMatch = Math.abs(weights.camera - userPrefs.camera);
+    
+    // 转换为正向评分（越小越好，所以用5减去差值）
+    const appearanceScore = 5 - appearanceMatch;
+    const batteryScore = 5 - batteryMatch;
+    const performanceScore = 5 - performanceMatch;
+    const cameraScore = 5 - cameraMatch;
+    
+    // 计算加权总分
+    const totalScore = (appearanceScore + batteryScore + performanceScore + cameraScore) / 4;
+    
+    return totalScore;
+}
+
+// 获取推荐结果
+function getRecommendations() {
+    // 筛选符合价格范围的手机
+    let filteredPhones = phoneData.filter(phone => 
+        phone.price >= userPreferences.minPrice && 
+        phone.price <= userPreferences.maxPrice
+    );
+    
+    // 如果启用了系统筛选，进一步筛选
+    if (userPreferences.systemFilterEnabled) {
+        filteredPhones = filteredPhones.filter(phone => 
+            userPreferences.selectedSystems.includes(getPhoneSystem(phone))
+        );
+    }
+    
+    // 按推荐分数排序
+    filteredPhones.sort((a, b) => {
+        const scoreA = calculateRecommendationScore(a);
+        const scoreB = calculateRecommendationScore(b);
+        return scoreB - scoreA; // 降序排列
+    });
+    
+    // 显示结果
+    displayResults(filteredPhones);
+}
+
+// 显示结果
+function displayResults(phones) {
+    phoneResults.innerHTML = '';
+    resultCount.textContent = phones.length;
+    
+    if (phones.length === 0) {
+        phoneResults.innerHTML = 
+            '<div class="empty-state"><div class="empty-state-icon">🔍</div><div class="empty-state-text">没有找到符合您条件的手机</div></div>';
+        return;
+    }
+    
+    // 创建手机卡片
+    phones.forEach((phone, index) => {
+        const card = createPhoneCard(phone);
+        card.classList.add('recommended');
+        card.style.animationDelay = `${index * 0.1}s`;
+        phoneResults.appendChild(card);
+    });
+    
+    // 绑定点击事件
+    document.querySelectorAll('.phone-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const phoneId = card.dataset.phoneId;
+            showPhoneDetail(phoneId);
+        });
+    });
+}
+
+// 创建手机卡片（复用phone-list.js中的函数）
+function createPhoneCard(phone) {
+    const div = document.createElement('div');
+    div.className = 'phone-card';
+    div.dataset.phoneId = phone.id;
+    div.innerHTML = `
+        <div class="phone-card-header">
+            <div class="phone-info">
+                <div class="phone-brand">${getBrandName(phone.brand)}</div>
+                <div class="phone-model">${phone.model}</div>
+                <div class="phone-processor">${phone.specs.cpu}</div>
+            </div>
+            <img src="${getBrandLogo(phone.brand)}" alt="${phone.brand}" class="phone-logo">
+        </div>
+        <div class="phone-tags">
+            ${phone.tags.map(tag => `<span class="phone-tag">${tag}</span>`).join('')}
+        </div>
+    `;
+    return div;
+}
+
+// 显示手机详情（复用phone-list.js中的函数）
+function showPhoneDetail(phoneId) {
+    const phone = phoneData.find(p => p.id === phoneId);
+    if (!phone) return;
+
+    const modal = document.getElementById('phoneModal');
+    const detail = document.getElementById('phoneDetail');
+    
+    // 创建雷达图数据
+    const radarData = phone.weights;
+    
+    detail.innerHTML = `
+        <div class="detail-header">
+            <img src="${getBrandLogo(phone.brand)}" alt="${phone.brand}" class="detail-logo">
+            <div class="detail-info">
+                <h2>${getBrandName(phone.brand)}</h2>
+                <div class="detail-model">${phone.model}</div>
+                <div class="detail-price">¥${phone.price.toLocaleString()}</div>
+                <div class="detail-score">综合评分: ${phone.score}</div>
+                <div class="detail-tags">
+                    ${phone.tags.map(tag => `<span class="detail-tag">${tag}</span>`).join('')}
+                </div>
+            </div>
+        </div>
+        <div class="detail-specs">
+            <div class="spec-item">
+                <div class="spec-label">处理器</div>
+                <div class="spec-value">${phone.specs.cpu}</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">运行内存</div>
+                <div class="spec-value">${phone.specs.ram}</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">存储空间</div>
+                <div class="spec-value">${phone.specs.storage}</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">屏幕</div>
+                <div class="spec-value">${phone.specs.screen}</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">主摄像头</div>
+                <div class="spec-value">${phone.specs.camera_main}</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">相机特色</div>
+                <div class="spec-value">${phone.specs.camera_feature}</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">电池容量</div>
+                <div class="spec-value">${phone.specs.battery}</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">充电功率</div>
+                <div class="spec-value">${phone.specs.charging}</div>
+            </div>
+        </div>
+        <div class="detail-charts">
+            <h3>性能雷达图</h3>
+            <div class="radar-chart">
+                <div class="radar-axis">
+                    <div class="axis-label">外观</div>
+                    <div class="axis-value">${radarData.appearance}/5</div>
+                </div>
+                <div class="radar-axis">
+                    <div class="axis-label">续航</div>
+                    <div class="axis-value">${radarData.battery}/5</div>
+                </div>
+                <div class="radar-axis">
+                    <div class="axis-label">性能</div>
+                    <div class="axis-value">${radarData.performance}/5</div>
+                </div>
+                <div class="radar-axis">
+                    <div class="axis-label">摄影</div>
+                    <div class="axis-value">${radarData.camera}/5</div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    modal.classList.add('active');
+}
+
+// 关闭详情弹窗
+const closePhoneModal = document.getElementById('closePhoneModal');
+const phoneModal = document.getElementById('phoneModal');
+
+if (closePhoneModal) {
+    closePhoneModal.addEventListener('click', () => {
+        phoneModal.classList.remove('active');
+    });
+}
+
+if (phoneModal) {
+    phoneModal.addEventListener('click', (e) => {
+        if (e.target === phoneModal) {
+            phoneModal.classList.remove('active');
+        }
+    });
+}
