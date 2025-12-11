@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机大全 - PhoneHub</title>
+    <link rel="stylesheet" href="phone-list.css">
+</head>
+<body class="light-theme">
+    <!-- 液态背景球体 -->
+    <div class="liquid-background">
+        <div class="liquid-ball ball-1"></div>
+        <div class="liquid-ball ball-2"></div>
+        <div class="liquid-ball ball-3"></div>
+    </div>
+
+    <!-- 顶部导航 -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <a href="index.html" class="back-btn">
+                <span class="back-icon">←</span>
+                <span>返回主页</span>
+            </a>
+            <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+        <h1 class="page-title">手机大全</h1>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <div class="container">
+        <!-- 左侧筛选区域 -->
+        <aside class="filter-sidebar">
+            <h2 class="filter-title">筛选条件</h2>
+            
+            <!-- 品牌筛选 -->
+            <div class="filter-section">
+                <h3 class="filter-section-title">品牌</h3>
+                <div class="filter-options" id="brandFilters">
+                    <!-- 动态生成 -->
+                </div>
+            </div>
+
+            <!-- Tags筛选 -->
+            <div class="filter-section">
+                <h3 class="filter-section-title">标签</h3>
+                <div class="filter-options" id="tagFilters">
+                    <!-- 动态生成 -->
+                </div>
+            </div>
+
+            <button class="reset-filter-btn" id="resetFilters">重置筛选</button>
+        </aside>
+
+        <!-- 右侧手机列表 -->
+        <main class="phone-list-container">
+            <div class="phone-list" id="phoneList">
+                <!-- 动态生成手机卡片 -->
+            </div>
+        </main>
+    </div>
+
+    <!-- 手机详情弹窗 -->
+    <div class="modal-overlay" id="phoneModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closePhoneModal">&times;</button>
+            <div class="phone-detail" id="phoneDetail">
+                <!-- 动态生成详情内容 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="phone-list.js"></script>
+</body>
+</html>
+
